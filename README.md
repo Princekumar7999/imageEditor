@@ -156,7 +156,7 @@ The program then calls the various image processing methods, creates new image f
   **output images of code**
   ![imageEditor](imageEditorOutput1.png)
   ![imageEditorjava](grayScaleImage.jpg)
-  ![imageEditorjava](changeBrightnessImage.jpg)
+  ![imageEditorjava](changedBrightnessImage.jpg)
   ![imageEditorjava](pixels.jpg)
   ![imageeditor](rotatedClockwise.jpg)
   ![imageEditor](rotatedAntiClockwise.jpg)
