@@ -11,7 +11,7 @@ image Editor is the crucial tool for  every photographer and youtuber which enab
 ![imageEditorjava](changedBrightnessImage.jpg)
 
 - printing PIXELVALUE of image : Images concists of pixels,this function will show you those pixels.
-![imageEditorjava](pixels.jpg)
+![imageEditorjava](pixels.jpeg)
   
 - rotating CLOCKWISE : this feature rotates the image clockwise.
 ![imageEditor](rotatedClockwise.jpg)
