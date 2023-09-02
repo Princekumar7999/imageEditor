@@ -14,7 +14,12 @@ image Editor is the crucial tool for  every photographer and youtuber which enab
 ![imageEditorjava](pixels.jpg)
   
 - rotating CLOCKWISE : this feature rotates the image clockwise.
+
+
 ![imageEditor](rotatedClockwise.jpg)
+
+
+
   
 - rotating ANTICLOCKWISE : this feature rotates the image anticlockwise.
  ![imageEditor](rotatedAntiClockwise.jpg)
