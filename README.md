@@ -8,7 +8,7 @@ image Editor is the crucial tool for  every photographer and youtuber which enab
 ![imageEditorjava](grayScaleImage.jpg)
 
 - Change BRIGHTNESS by percentage : The brightness of image will change according to the percentage as provided by the user.
-![imageEditorjava](changeBrightnessImage.jpg)
+![imageEditorjava](changedBrightnessImage.jpg)
 
 - printing PIXELVALUE of image : Images concists of pixels,this function will show you those pixels.
 ![imageEditorjava](pixels.jpg)
