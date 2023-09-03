@@ -176,7 +176,8 @@ The program then calls the various image processing methods, creates new image f
   ![imageEditor](imageEditor3.png)
   ![imageEditor](imageEditor4.png)
   ![imageEditor](imageEditor6.png)
-  ![imageEditor](imageEditor5.png)
+  ![imageEditor](imageEditor7.png)
+  ![imageEditor](imageEditor8.png)
 
   **output images of code**
   ![imageEditor](imageEditorOutput1.png)
