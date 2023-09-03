@@ -28,7 +28,7 @@ image Editor is the crucial tool for  every photographer and youtuber which enab
   ![imageEditor](flipedHorizontal.jpg)
 
   - BLURRING THE IMAGE : This feature blurs the image
-   ![imageEditor]
+   ![imageEditor](BlurredImage.jpg)
 
 
 **let's START**
@@ -90,44 +90,19 @@ This process results in a horizontally rotated version of the input image. The r
 
 **BLURRING THE IMAGE**
 
-It starts by getting the width and height of the input image.
+taking width and height of image.It creates a new BufferedImage called blurredImage.
 
-It creates a new BufferedImage called blurredImage with the same dimensions and image type as the input image. This new image will store the blurred result.
+The code then enters nested loops to iterate through each pixel in the input image.
+For each pixel at position (x, y) in the input image, it initializes variables avgRed, avgGreen, and avgBlue to 0, which will be used to accumulate the sum of color values for the pixels.
 
-The code then enters nested loops to iterate through each pixel in the input image. The outer loop iterates over the rows (y-coordinates), and the inner loop iterates over the columns (x-coordinates).
-
-For each pixel at position (x, y) in the input image, it initializes variables avgRed, avgGreen, and avgBlue to 0, which will be used to accumulate the sum of color values for the pixels in the neighborhood.
-
-It also initializes a numPixels variable to 0, which will keep track of the number of pixels in the neighborhood.
-
-The code then enters two additional nested loops to explore the neighborhood of the current pixel. It iterates over offsetX and offsetY values from -radius to radius. These values define a square neighborhood centered around the current pixel.
+The code then enters two additional nested loops.
 
 For each offset, it calculates the posX and posY coordinates of the neighboring pixel.
-
-It checks if the calculated posX and posY values are within the bounds of the input image to ensure that it doesn't go out of bounds.
-
-If the neighboring pixel is within the image boundaries, it retrieves the color of that pixel using inputImage.getRGB(posX, posY).
-
-It extracts the red, green, and blue color components from the retrieved pixel using bitwise operations and accumulates them in the avgRed, avgGreen, and avgBlue variables, respectively.
-
-It increments the numPixels variable to keep track of how many pixels were included in the neighborhood.
-
+then, it retrieves the color of that pixel using inputImage.getRGB(posX, posY).
+It extracts the red, green, and blue color components from the retrieved pixel.
 After processing all the neighboring pixels in the neighborhood, it calculates the average color values by dividing avgRed, avgGreen, and avgBlue by numPixels.
-
-It combines the average color values to create a new blurred pixel in the form of an integer where the red component occupies the upper 8 bits, green the middle 8 bits, and blue the lower 8 bits.
-
-Finally, it sets this new blurred pixel as the color of the corresponding pixel in the blurredImage using blurredImage.setRGB(x, y, blurredPixel).
-
-The process continues for all pixels in the input image.
-
-Once all pixels have been processed, the method returns the blurredImage, which now contains the blurred version of the input image.
-
-This code essentially implements a basic form of image blurring using a simple box filter, where each pixel in the output image is the average color of its neighborhood. The radius parameter controls the size of the neighborhood, and increasing it will result in a stronger blur effect.
-
-
-
-
-
+It combines the average color values to create a new blurred pixel.
+Finally, it sets this new blurred pixel as the color of the corresponding pixel in the blurredImage using blurredImage.setRGB(x, y, blurredPixel).It all continues and we gets the blurred image.
 
 **PROCEDURE****(STEPS TO BE FOLLOWED)**
 - OPEN YOUR FAVOURITE JAVA IDE(EG.INTELLIJ)
@@ -201,6 +176,7 @@ The program then calls the various image processing methods, creates new image f
   ![imageEditor](imageEditor3.png)
   ![imageEditor](imageEditor4.png)
   ![imageEditor](imageEditor5.png)
+  ![imageEditor](imageEditor6.png)
 
   **output images of code**
   ![imageEditor](imageEditorOutput1.png)
@@ -217,3 +193,4 @@ The program then calls the various image processing methods, creates new image f
 
   
   ![imageEditor](flipedHorizontal.jpg)
+  ![imageEditor](BlurredImage.jpg)
